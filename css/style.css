@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  font-weight: 900;
+  color: #ffd1d1;
+  font-size: 20px;
+}
+
+/* Text/Fonts */
+
+h1 {
+  font-family: "EB Garamond", serif;
+  color: #ffd1d1;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-family: "Sacramento", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* section,divs */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px 0px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #111;
+  color: #ffd1d1;
+  font-weight: 900;
+  z-index: 2;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(230, 165, 210, 0.2);
+  mix-blend-mode: overlay;
+}
+
+.greet-search {
+  position: relative;
+  bottom: 150px;
+  display: inline;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+
+  margin-bottom: 150px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-engine {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-width: 40%;
+  max-width: 60%;
+
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.engine {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+
+  padding-top: 200px;
+}
+
+.searchengine {
+  min-width: 400px;
+}
+
+.bigbox {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 20;
+
+  font-family: "EB Garamond", serif;
+  color: #ffd1d1;
+  font-weight: 900;
+
+  margin-top: 150px;
+}
+
+.bigbox2 {
+  position: absolute;
+  width: 100%;
+  bottom: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: "EB Garamond", serif;
+  color: #ffd1d1;
+  font-weight: 900;
+  text-align: center;
+  z-index: 10;
+
+  margin-top: 50px;
+}
+
+.smallbox1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box1 {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.notes-box1 {
+  display: grid;
+  justify-content: center;
+  box-shadow: 0px 2px 5px rgb(180, 108, 108);
+  border-radius: 20%;
+  min-width: 200px;
+
+  margin-top: 50px;
+  padding: 10px 30px;
+}
+
+.bigbox3 {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 150px;
+  justify-content: space-evenly;
+  z-index: 15;
+
+  font-family: "EB Garamond", serif;
+  color: #ffd1d1;
+  font-weight: 900;
+  text-align: center;
+
+  margin-top: 500px;
+}
+
+/* Others */
+
+.logo {
+  width: 30px;
+}
+
+.navbar-toggler {
+  box-shadow: 0px 2px 5px rgb(180, 108, 108);
+}
+
+.nav-home {
+  color: #d1af94;
+
+  padding: 10px 20px 0px;
+}
+
+.click-search {
+  padding: 2px;
+}
+
+.gaming-logo {
+  width: 80px;
+}
+
+.gaming-logo2 {
+  width: 50px;
+}
+
+input {
+  width: 30%;
+  background-color: transparent;
+
+  font-family: "EB Garamond", serif;
+  color: #d1af94;
+  font-weight: 600;
+
+  border: solid 2px;
+  border-color: #d1af94;
+  box-shadow: 0 0 10px 0;
+  border-radius: 0;
+  padding: 5px;
+}
+.click-search {
+  font-family: "EB Garamond", serif;
+  color: #ffd1d1;
+  font-weight: 600;
+  background-color: transparent;
+
+  width: 80px;
+  border: solid 2px;
+  border-color: #d1af94;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 5px 5px 0;
+  padding: 5px;
+  margin-left: -5px;
+}
+
+option {
+  font-family: "EB Garamond", serif;
+  color: #d1af94;
+  font-weight: 600;
+  background-color: #252525;
+  border: solid 2px;
+}
+
+select {
+  height: 43.5px;
+  font-family: "EB Garamond", serif;
+  color: #d1af94;
+  font-weight: 600;
+  background-color: transparent;
+  text-align: center;
+
+  border: solid 2px;
+  border-color: #d1af94;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 10px 0;
+  padding: 5px;
+  margin-right: -1px;
+}
+
+.clock {
+  font-size: 3rem;
+}
+
+.note-logo {
+  width: 55px;
+}
+
+.text {
+  font-family: "EB Garamond", serif;
+  color: #d1af94;
+  font-weight: 900;
+}
+
+/* hovers */
+
+.text:hover {
+  color: #dd5b82;
+}
+
+.logo:hover {
+  transition: 600ms;
+  transform: scale(1.2);
+}
+
+.note-logo:hover {
+  transition: 600ms;
+  transform: scale(1.35);
+}
+
+.gaming-logo:hover {
+  transition: 600ms;
+  transform: scale(1.35);
+}
+
+.gaming-logo2:hover {
+  transition: 600ms;
+  transform: scale(1.35);
+}
+
+.select-engine:hover {
+  color: #dd5b82;
+}
+
+option:hover {
+  color: #dd5b82;
+}
+
+.click-search:hover {
+  color: #dd5b82;
+}
+
+.nav-home:hover {
+  color: #dd5b82;
+}
+
+.notes-box1:hover {
+  transition: 600ms;
+  transform: scale(1.05);
+}
+
+.notes-box2:hover {
+  transition: 600ms;
+  transform: scale(1.05);
+}
+
+.option-engine:hover {
+  color: #dd5b82;
+}
