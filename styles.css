@@ -400,15 +400,27 @@ select:hover {
     left: 5%;
   }
 
+  .nav__container {
+    width: 80%;
+  }
+
   .engine {
-    width: 50%;
+    width: 60%;
+  }
+
+  .engine input {
+    width: 70%;
   }
 
   .engine img {
-    width: 28px;
+    width: 27px;
   }
 
   .bigbox {
+    left: 5%;
+  }
+
+  .bigbox2 {
     left: 5%;
   }
 }
@@ -424,14 +436,23 @@ select:hover {
     left: 3%;
   }
   .engine {
-    width: 80%;
+    width: 85%;
   }
 
   .engine button {
     width: 40px;
   }
 
+  .engine img {
+    width: 26px;
+  }
+
   .bigbox {
     left: 3%;
+  }
+
+  .bigbox2 {
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
