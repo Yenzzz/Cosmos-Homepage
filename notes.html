@@ -4,24 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Snow Homepage</title>
-
-        <!-- Bootstrap -->
-
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous" />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+        <title>Cosmos Homepage - Notes</title>
 
         <!-- Stylesheet -->
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="styles.css">
 
+        <!-- Icon Scouts cdn -->
+
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         <!-- Google Fonts -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,58 +22,48 @@
             href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Sacramento&display=swap"
             rel="stylesheet" />
 
-
     </head>
     <body>
 
-        <section class="showcase">
+        <section id="homepage">
+            <!-- Navbar -->
 
-            <header>
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="index.html"><img
-                                src="images/island.png"
-                                width="60px"></a>
-                        <button class="navbar-toggler" type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarNavAltMarkup"
-                            aria-controls="navbarNavAltMarkup"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse"
-                            id="navbarNavAltMarkup">
-                            <div class="navbar-nav ms-auto">
-                                <a class="nav-home ms-auto" href="index.html">Home</a>
-                                <a class="nav-link active ms-auto"
-                                    aria-current="page"
-                                    href="https://www.twitch.tv/"><img
-                                        class="logo"
-                                        src="images/twitch3.png" alt=""></a>
-                                <a class="nav-link ms-auto"
-                                    href="https://www.reddit.com/"><img
-                                        class="logo"
-                                        src="images/reddit3.png" alt=""></a>
-                                <a class="nav-link ms-auto"
-                                    href="https://www.youtube.com/"><img
-                                        class="logo"
-                                        src="images/youtube5.png"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </header>
+            <nav id="navbar">
+                <div class="container nav__container">
+                    <a class="logo" href="index.html"><img
+                            src="images/island.png"
+                            alt=""></a>
+                    <ul class="navbar-menu">
+                        <li><a
+                                href="https://www.twitch.tv/directory/game/Lost%20Ark"><img
+                                    class="nav-icons"
+                                    src="images/twitch3.png"></a></li>
+                        <li><a
+                                href="https://www.reddit.com/"><img
+                                    class="nav-icons"
+                                    src="images/reddit3.png"></a></li>
+                        <li><a
+                                href="https://www.youtube.com/"><img
+                                    class="nav-icons"
+                                    src="images/youtube5.png"></a></li>
+                        <li><a
+                                href="https://mail.google.com/mail/u/1/#inbox"><img
+                                    class="nav-icons"
+                                    src="images/gmail.png"></a></li>
 
-            <video class="background-video" src="images/Cosmos - 14244.mp4"
-                autoplay loop muted></video>
+                    </ul>
+                    <button class="open-menu"><i class="uil uil-bars"></i></button>
+                    <button class="close-menu"><i class="uil uil-x"></i></button>
+                </div>
+            </nav>
 
+            <!-- Video Background & Overlay -->
 
-            <div class="overlay">
+            <video class="bg-video" src="images/Cosmos - 14244.mp4" autoplay
+                loop
+                muted></video>
+            <div class="overlay"></div>
 
-            </div>
 
 
 
@@ -111,6 +93,8 @@
                     <a class="text"
                         href="https://pixabay.com/videos/search/live%20wallpaper/?pagi=4">Live
                         Wallpapers</a>
+                    <a class="text" href="https://iconscout.com/unicons">Icon
+                        Scouts</a>
                 </div>
                 <div class="notes-box1">
                     <a class="text"
@@ -129,11 +113,10 @@
                         PDF Sheet</a>
                 </div>
 
-            </div>
 
-        </section>
+            </section>
 
-        <script src="script/script.js"></script>
+            <script src="script/script.js"></script>
 
-    </body>
-</html>
+        </body>
+    </html>
