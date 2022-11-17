@@ -1,0 +1,437 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+
+body {
+  font-family: "EB Garamond", serif;
+  color: antiquewhite;
+  line-height: 1.7;
+}
+
+:root {
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400 ease;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Sacramento", sans-serif;
+  font-weight: 900;
+
+  padding: 5px 10px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: "Sacramento", sans-serif;
+  font-weight: 900;
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-family: "Sacramento", sans-serif;
+  font-weight: 900;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+a {
+  color: antiquewhite;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgb(177, 109, 53, 0.5);
+  color: antiquewhite;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.btn-primary {
+  background-color: grey;
+  color: antiquewhite;
+}
+
+span {
+  font-size: 1.8rem;
+}
+
+/* ============== PC ================= */
+
+/* Navbar */
+
+.logo {
+  color: rgb(241, 138, 101);
+  font-size: 2rem;
+  font-family: "Niconne", cursive;
+  font-weight: 900;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0;
+
+  z-index: 11;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar */
+
+/* Navbar */
+
+.logo {
+  color: rgb(241, 138, 101);
+  width: 50px;
+}
+
+nav {
+  width: 100vw;
+  height: 80px;
+  position: fixed;
+  top: 0;
+
+  z-index: 11;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icons {
+  width: 25px;
+}
+
+.nav__container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-menu li a {
+  font-size: 1rem;
+  font-weight: 900;
+
+  transition: all 400ms ease;
+}
+
+.nav-icons:hover {
+  color: rgb(221, 125, 90);
+  transform: scale(1.2);
+  transition: 400ms;
+}
+
+.nav__container button {
+  display: none;
+}
+
+/* navbar change color on scroll */
+
+.window-scroll {
+  background-color: rgb(248, 188, 198, 0.5);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Background Video */
+
+#homepage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  min-height: fit-content;
+
+  padding: 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #111;
+  color: #ffd1d1;
+  font-weight: 900;
+  z-index: 2;
+}
+
+#homepage video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgb(230, 165, 210, 0.2);
+  mix-blend-mode: overlay;
+}
+
+/* Greeting & Clock */
+
+.greeting-header {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+}
+
+.engine {
+  display: flex;
+  min-width: 35%;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  background-color: rgb(245, 195, 195, 0.4);
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+}
+
+select {
+  font-family: "EB Garamond", serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: #ffd1d1;
+  text-shadow: rgb(177, 109, 53, 0.5);
+  background-color: transparent;
+  width: 110px;
+  text-align: center;
+  cursor: pointer;
+
+  margin: 0;
+  padding: 0;
+}
+
+select:hover {
+  color: rgb(243, 128, 195);
+  transition: all 400ms ease;
+}
+
+.option-engine {
+  background-color: #111;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option-engine:hover {
+  color: rgb(243, 128, 195);
+  transition: all 400ms ease;
+}
+
+.engine input {
+  width: 70%;
+  background-color: transparent;
+  color: #ffd1d1;
+  font-weight: 900;
+}
+
+.engine img {
+  width: 30px;
+}
+
+.engine button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Other Contents */
+
+.bigbox {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 10%;
+}
+
+.gaming-logo {
+  width: 80px;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+}
+
+.gaming-logo2 {
+  width: 50px;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+}
+
+.note-logo {
+  width: 60px;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.bigbox img:hover {
+  transform: scale(1.25);
+  transition: 500ms;
+  box-shadow: 4px 6px 6px 0 rgba(241, 125, 174, 0.5);
+}
+
+/* Lost Ark Page */
+
+.bigbox2 {
+  width: 100vw;
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bigbox h3 {
+  font-family: "Sacramento", sans-serif;
+  font-weight: 900;
+}
+
+.notes-box1 {
+  display: grid;
+  min-width: 200px;
+  min-height: 200px;
+  text-align: center;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+}
+
+.notes-box1:hover {
+  transition: 500ms;
+  transform: scale(1.05);
+  box-shadow: 4px 6px 6px 0 rgba(241, 125, 174, 0.5);
+}
+
+.notes-box1 a {
+  padding: 0;
+}
+
+.text:hover {
+  color: #f57474;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+/* ================= MEDIA QUERIES (TABLETS) ===================== */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .greeting-header {
+    left: 5%;
+  }
+
+  .engine {
+    width: 50%;
+  }
+
+  .engine img {
+    width: 28px;
+  }
+
+  .bigbox {
+    left: 5%;
+  }
+}
+
+/* ================= MEDIA QUERIES (Phones) ===================== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .greeting-header {
+    left: 3%;
+  }
+  .engine {
+    width: 80%;
+  }
+
+  .engine button {
+    width: 40px;
+  }
+
+  .bigbox {
+    left: 3%;
+  }
+}
