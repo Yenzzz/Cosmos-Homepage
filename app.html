@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cosmos Homepage - Others</title>
+
+        <!-- Stylesheet -->
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Icon Scouts cdn -->
+
+        <link rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- Google Fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Sacramento&display=swap"
+            rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <section id="homepage">
+            <!-- Navbar -->
+
+            <nav id="navbar">
+                <div class="container nav__container">
+                    <a class="logo" href="index.html"><img
+                            src="images/island.png"
+                            alt=""></a>
+                    <ul class="navbar-menu">
+                        <li><a
+                                href="https://www.twitch.tv/directory/game/Lost%20Ark"><img
+                                    class="nav-icons"
+                                    src="images/twitch3.png"></a></li>
+                        <li><a
+                                href="https://www.reddit.com/"><img
+                                    class="nav-icons"
+                                    src="images/reddit3.png"></a></li>
+                        <li><a
+                                href="https://www.youtube.com/"><img
+                                    class="nav-icons"
+                                    src="images/youtube5.png"></a></li>
+                        <li><a
+                                href="https://mail.google.com/mail/u/1/#inbox"><img
+                                    class="nav-icons"
+                                    src="images/gmail.png"></a></li>
+
+                    </ul>
+                    <button class="open-menu"><i class="uil uil-bars"></i></button>
+                    <button class="close-menu"><i class="uil uil-x"></i></button>
+                </div>
+            </nav>
+
+            <!-- Video Background & Overlay -->
+
+            <video class="bg-video" src="images/Cosmos - 14244.mp4" autoplay
+                loop
+                muted></video>
+            <div class="overlay"></div>
+
+
+
+
+            <!-- Contents -->
+
+            <div class="container bigbox2">
+
+
+
+                <div class="notes-box2">
+
+                    <div class="tempBox">
+                        <label class="temp-label" for="temp">Temperature:</label>
+                        <input id="myTemp" type="text" name="temp"
+                            autocomplete="off">
+                        <div class="option">
+                            <input type="radio" id="cBtn" name="unit">
+                            <label for="cBtn">Celsius</label><br>
+                            <input type="radio" id="fBtn" name="unit">
+                            <label for="fBtn">Fahrenheit</label><br>
+                            <button id="tempBtn">Submit</button>
+                        </div>
+                    </div>
+
+                    <div class="tempResult">
+
+                        <label id="tempLabel" for=""></label>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+
+        <script src="script/temp.js"></script>
+
+    </body>
+</html>
