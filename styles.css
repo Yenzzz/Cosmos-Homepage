@@ -118,29 +118,10 @@ span {
 
 .logo {
   color: rgb(241, 138, 101);
+  width: 50px;
   font-size: 2rem;
   font-family: "Niconne", cursive;
   font-weight: 900;
-}
-
-nav {
-  width: 100vw;
-  height: 80px;
-  position: fixed;
-  top: 0;
-
-  z-index: 11;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Navbar */
-
-/* Navbar */
-
-.logo {
-  color: rgb(241, 138, 101);
-  width: 50px;
 }
 
 nav {
@@ -219,7 +200,7 @@ nav {
 }
 
 #homepage video {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -342,6 +323,13 @@ select:hover {
   padding: 3px;
 }
 
+.app-logo {
+  width: 60px;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+  padding: 9px;
+}
+
 .bigbox img:hover {
   transform: scale(1.25);
   transition: 500ms;
@@ -387,6 +375,106 @@ select:hover {
   color: #f57474;
   transition: all 400ms ease;
   cursor: pointer;
+}
+
+.notes-box2 {
+  display: flex;
+  min-width: 200px;
+  min-height: 200px;
+  text-align: center;
+  box-shadow: 2px 4px 4px 0 rgba(241, 125, 174, 0.5);
+  border-radius: 20px;
+}
+
+.notes-box2:hover {
+  transition: 500ms;
+  transform: scale(1.05);
+  box-shadow: 4px 6px 6px 0 rgba(241, 125, 174, 0.5);
+}
+
+/* Temp Converter */
+
+/* Temp Box */
+
+.tempBox {
+  width: 300px;
+  height: 300px;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+.tempResult {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  gap: 2;
+
+  padding-top: 20px;
+  margin: 10px;
+}
+
+#tempLabel {
+  font-size: 2rem;
+
+  padding: 2px 5px;
+}
+
+.tempBox input {
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffd1d1;
+  background-color: rgb(245, 195, 195, 0.4);
+
+  margin-top: 20px;
+
+  padding: 0 10px;
+}
+
+.option {
+  width: 100%;
+  justify-content: left;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.option input {
+  width: 25px;
+  height: 20px;
+  color: rgb(34, 32, 32);
+  font-weight: 600;
+
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.option label {
+  font-size: 1.2rem;
+}
+
+.tempBox button {
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #ffd1d1;
+  background-color: rgb(230, 165, 210, 0.2);
+  box-shadow: 1px 2px 2px 0 rgb(248, 188, 198, 0.5);
+
+  margin-top: 20px;
+}
+
+.tempBox button:hover {
+  color: #f57474;
+  transition: 400ms;
+}
+
+.temp-label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
 }
 
 /* ================= MEDIA QUERIES (TABLETS) ===================== */
@@ -448,11 +536,14 @@ select:hover {
   }
 
   .bigbox {
-    left: 3%;
+    left: 2%;
   }
 
   .bigbox2 {
+    display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10px;
+
+    bottom: 1%;
   }
 }
