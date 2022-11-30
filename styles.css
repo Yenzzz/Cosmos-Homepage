@@ -553,6 +553,20 @@ select:hover {
     bottom: 1%;
   }
   
+   .notes-box1 h3 {
+    font-size: 1.5rem;
+  }
+
+  .notes-box1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  
   .notes-box2 {
     display: flex;
     flex-direction: column;
