@@ -292,6 +292,7 @@ select:hover {
 .engine button {
   background-color: transparent;
   cursor: pointer;
+  padding-right: 7px;
 }
 
 /* Other Contents */
