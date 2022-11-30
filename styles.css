@@ -509,7 +509,13 @@ select:hover {
   }
 
   .bigbox2 {
+    display: flex;
+    flex-wrap: wrap;
     left: 5%;
+
+    gap: 20px;
+    bottom: 7%;
+    
   }
 }
 
